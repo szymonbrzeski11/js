@@ -1,0 +1,55 @@
+
+<html>
+ <head>
+ <script type="text/javascript">
+ function klient(nazwisko_k,imie_k,zawod_k)//początek konstruktora
+{
+this.nazwisko=nazwisko_k;
+this.imie=imie_k;
+this.zawod=zawod_k;
+}//koniec konstruktora
+ klient.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod);
+ };
+var osoba1 = new klient("Kowalski", "Jan", "kierowca"); // nowy obiekt osoba1
+var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');
+osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+osoba2.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("klient pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod);
+ 
+ 
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+ 
+ 
+ 
+  function Ciezarowka_wyswietl_brzkowski(waga_brz,cel_brz,skad_brz)//początek konstruktora
+{
+this.waga=waga_brz;
+this.cel=cel_brz;
+this.skad=skad_brz;
+}//koniec konstruktora
+ Ciezarowka_wyswietl_brzkowski.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.waga + ' ' + this.cel+ ' ' + this.skad);
+ };
+var ciezar1 = new Ciezarowka_wyswietl_brzkowski("4t", "Gdańsk", "Zakopane"); // nowy obiekt osoba1
+var ciezar2 = new Ciezarowka_wyswietl_brzkowski('3.5t', 'Berlin', 'Szczecin');
+ciezar1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+ciezar2.wypisz();
+ document.write("Właściwości tira"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("tir pierwszy"+" "+ciezar1.waga+" "+ciezar1.cel+" "+ciezar1.skad);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
+

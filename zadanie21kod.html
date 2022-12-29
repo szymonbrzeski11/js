@@ -1,0 +1,53 @@
+<textarea cols=1000 rows=1000>
+<html>
+<head>
+<title>
+ Przykład obliczenia V i Pc walca
+</title>
+ <script language="JavaScript">
+function V(r,h)
+{
+ a_brz=parseFloat(r)
+ b_brz=parseFloat(h)
+ V_wynik=Math.sqrt((a_brz*a_brz+b_brz*b_brz));
+ document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); /* na dokument */
+ alert("dl drabiny="+V_wynik.toFixed(2)+" cm"); /*do okna Alert */
+ pokaz1.innerHTML="dlugoscc drabiny="+V_wynik.toFixed(2)+" cm"+"<br>"; /* do tabeli */
+}
+function Pc(r,h)
+{
+ a_brz=parseFloat(r)
+ b_brz=parseFloat(h)
+19
+ Pc_wynik=Math.sin(V_wynik/b_brz)*180/Math.PI;
+ document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
+ alert("alfa="+Pc_wynik.toFixed(2)+"");
+ pokaz2.innerHTML="alfa ="+Pc_wynik.toFixed(2)+"";
+}
+ </script>
+</head>
+<body>
+Pobliczanie pola i obw prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="V(this.a_brz.value,this.b_brz.value);
+Pc(this.a_brz.value,this.b_brz.value);return false">
+ wprowadz a =
+ <input size="6" name="a_brz">
+ wprowadz b =
+ <input size="6" name="b_brz">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ dlugosc drabiny=
+ <input size="6" name="obj">
+obwod=
+ <input size="6" name="pole">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
+
+

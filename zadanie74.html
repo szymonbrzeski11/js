@@ -1,0 +1,35 @@
+
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+
+ var p_brz=prompt("podaj pierwsza liczbe z przedzialu <20,60>","");
+ var d_brz=prompt("podaj druga liczbe z przedzialu <20,60>","");
+
+ var pocz_brz;
+ var tekst_brz="brzeski szymon";
+ var zwiek_brz;
+ var i;
+ 
+  var a_brz=parseFloat(p_brz);
+  var b_brz=parseFloat(d_brz);
+
+  if(p_brz>60 || d_brz>60 || p_brz<20 || d_brz<20)
+  document.write("zle wartosci");
+ 
+  
+  if(p_brz<d_brz) {
+  for(i=p_brz;i<d_brz;i++){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_brz+"<br></p>")
+}
+}
+  if(d_brz<p_brz) {
+  for(i=p_brz;i>d_brz;i--){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_brz+"<br></p>")
+}
+}
+ </script>
+</div>
+</body>
+</html>

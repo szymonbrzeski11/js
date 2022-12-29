@@ -1,0 +1,28 @@
+
+<html>
+<body>
+ 
+<script type="text/javascript">
+ 
+  document.write("<p style=\"font-size: 40.px; color: green;\"><br>Od kiedy dziala javascript? <br></p>");
+ 
+function test() {
+var liczba = document.forms['formularz'].liczba.value;
+ if(liczba==1995){
+ document.write ("<p style=\"font-size: 40; color: blue;\"><br>Brawo znasz rok od kiedy działa Javasript<br></p>");
+ }
+ 
+ else{
+  document.write ("<p style=\"font-size: 70; color: red;\"><br>Źle musisz jeszcze poczytać <br></p>");
+  document.write ("<p style=\"font-size: 70; color: red;\"><br>wczytany rok="+liczba+"<br></p>");
+ }
+ }
+</script>
+ 
+<form id="formularz" action="">
+<br />Podaj rok: <input type="text" name="liczba" />
+<br /><button onclick="test()">Sprawdź</button>
+</form>
+ 
+</body>
+</html>

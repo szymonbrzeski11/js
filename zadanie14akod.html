@@ -1,0 +1,40 @@
+<textarea cols=1000 rows=1000>
+<html>
+<body>
+<div style="color:purple;font-size:80px;">
+ <script language="JavaScript">
+var c_brz=prompt("wczytaj c=","");
+var b_brz=prompt("wczytaj b=","");
+var cos;
+var a_brz;
+var sin;
+var ty;
+var cty;
+var x;
+
+
+var c_brz=parseFloat(c_brz);
+var b_brz=parseFloat(b_brz);
+a_brz=(Math.sqrt((c_brz*c_brz)+(b_brz*b_brz)));
+
+
+
+cos=b_brz/c_brz;
+sin=a_brz/c_brz;
+ty=a_brz/b_brz;
+cty=b_brz/a_brz;
+
+
+
+document.write("cos="+c_brz+"/"+b_brz+"="+cos.toFixed(2)+"\n\n\n");
+document.write ("<br>");
+document.write("sin="+a_brz+"/"+c_brz+"="+sin.toFixed(2)+"\n\n\n");
+document.write ("<br>");
+document.write("ty="+a_brz+"/"+b_brz+"="+ty.toFixed(2)+"\n\n\n");
+document.write ("<br>");
+document.write("cty="+b_brz+"/"+a_brz+"="+cty.toFixed(2)+"\n\n\n");
+ </script>
+</div>
+</body>
+</html>
+ 

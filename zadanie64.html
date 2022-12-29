@@ -1,0 +1,20 @@
+<html>
+<body>
+<script type="text/javascript">
+ 
+function test() {
+var liczba = document.forms['formularz'].liczba.value;
+if (liczba % 2 == 0)
+alert("Podana liczba jest parzysta");
+else
+alert("Podana liczba nie jest parzysta");
+} 
+</script>
+ 
+<form id="formularz" action="">
+<br />Podaj liczbę: <input type="text" name="liczba" />
+<br /><button onclick="test()">Sprawdź</button>
+</form>
+ 
+</body>
+</html>

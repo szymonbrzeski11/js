@@ -1,0 +1,52 @@
+
+<html> 
+<head> 
+<title>
+ Przykład obliczenia Obw i Pc prostokata
+</title>
+ <script language="JavaScript">
+function pc_brz(a_brz,b_brz)
+{
+ a_brz_liczba=parseFloat(a_brz)
+ b_brz_liczba=parseFloat(b_brz)
+ pc_brz_wynik=a_brz*b_brz
+ document.getElementsByName('obj')[0].value=pc_brz_wynik.toFixed(2); /* na dokument */
+ alert("Pc="+pc_brz_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="Pc="+pc_brz_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obw_brz(a_brz,b_brz)
+{
+ a_brz_liczba=parseFloat(a_brz)
+ b_brz_liczba=parseFloat(b_brz)
+19
+obw_brz_wynik=2*a_brz+2*b_brz
+ document.getElementsByName('pole')[0].value=obw_brz_wynik.toFixed(2);
+ alert("Obw="+obw_brz_wynik.toFixed(2)+" cm");
+ pokaz2.innerHTML="Obw="+obw_brz_wynik.toFixed(2)+"cm";
+}
+ </script>
+</head> 
+<body> 
+Obliczanie Obw i Pc prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="pc_brz(this.boka_brz.value,this.bokb_brz.value); 
+obw_brz(this.boka_brz.value,this.bokb_brz.value);return false"> 
+ Podaj a=
+ <input size="6" name="boka_brz">
+ Podaj b=
+ <input size="6" name="bokb_brz">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+Pc=
+ <input size="6" name="obj">
+Obw=
+ <input size="6" name="pole">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
+

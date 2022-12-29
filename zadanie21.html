@@ -1,0 +1,37 @@
+<html>
+<body>
+<div style="color:green;font-size:61px;">
+ <script language="JavaScript"> 
+var b_brz=prompt("wczytaj b=","");
+var c_brz=prompt("wczytaj c=","");
+
+var b_brz=parseFloat(b_brz).toFixed(3); 
+var c_brz=parseFloat(c_brz).toFixed(3);
+
+var a_brz = Math.sqrt((c_brz*c_brz)-(b_brz*b_brz)).toFixed(3);
+var pole=(a_brz*b_brz)/2
+
+var h3=((a_brz*b_brz)/c_brz).toFixed(3);
+
+var sin_alfa=(a_brz/c_brz).toFixed(3);
+var cos_alfa=(b_brz/c_brz).toFixed(3);
+var tg_alfa=(a_brz/b_brz).toFixed(3);
+var ctg_alfa=(b_brz/a_brz).toFixed(3);
+
+var alfa=(Math.sin(a_brz/c_brz)*180/Math.PI) .toFixed(3);
+var beta=(90-alfa).toFixed(3);
+document.write("a="+a_brz+"cm <br>");
+document.write("Pole="+pole+" cm^2 <br>");
+document.write("Wysokosci sa rowne: "+a_brz+" , "+b_brz+" oraz "+h3+" cm <br>");
+document.write("Sinus alfa="+sin_alfa+" <br>");
+document.write("Sinus cosinus="+cos_alfa+" <br>");
+document.write("Sinus tanges="+tg_alfa+" <br>");
+document.write("Sinus cotanges="+ctg_alfa+" <br>");
+document.write("Alfa="+alfa+"° <br>");
+document.write("Beta="+beta+"° <br>");
+
+</script>
+</div>
+</body>
+</html>
+ 
